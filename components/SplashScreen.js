@@ -12,9 +12,7 @@ export default class SplashScreen extends React.Component {
       }
 
     componentDidMount() {
-    //     this.animation.play();
-    //   
-
+    
     Animated.timing(this.state.progress, {
         toValue: 1,
         duration: 5000,

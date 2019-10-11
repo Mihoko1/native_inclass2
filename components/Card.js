@@ -2,15 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, Animated } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-
 export default class Card extends React.Component {
    
-    
     constructor(props) {
         super(props);
     }
 
-    
     getStar () {
         switch (this.props.star) {
             case 1: 
@@ -38,19 +35,18 @@ export default class Card extends React.Component {
 
     render(){
         return (
-
         
-                <View style={styles.cardContainer}>
-                        <View style={styles.imageContainer}>
-                            <Image
-                                style={styles.image} 
-                                source={{ uri: this.props.image }}
-                            />
-                        </View>
-                            <Text style={styles.name}>{this.props.name}</Text>
-                            <View style={styles.star}><Text>{ this.getStar() }</Text></View>
-                            <Text style={styles.category}>{this.props.category}</Text>
-                </View>
+            <View style={styles.cardContainer}>
+                    <View style={styles.imageContainer}>
+                        <Image
+                            style={styles.image} 
+                            source={{ uri: this.props.image }}
+                        />
+                    </View>
+                        <Text style={styles.name}>{this.props.name}</Text>
+                        <View style={styles.star}><Text>{ this.getStar() }</Text></View>
+                        <Text style={styles.category}>{this.props.category}</Text>
+            </View>
          
         )
     }

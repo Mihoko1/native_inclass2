@@ -137,17 +137,9 @@ export default class App extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  // safeAreaView: {
-  //   backgroundColor: '#e53935',
-  //   marginBottom: 50,
-  // },
-  // container: {
-  //   backgroundColor: '#fff',
-  // },
   fill: {
     flex: 1,
   },
- 
   header: {
     position: 'absolute',
     top: 0,
