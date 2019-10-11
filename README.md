@@ -3,11 +3,10 @@
 
 ## About
 
-This App is made to understand the concepts of components, prop, state, lifecycle methods and JSX to creat a React Native App.
+This App is made to understand how to add animation.
 
-Toronto Restaurant list APP is consist of three components - App, Card, Header.
+-Splash screen (components/SplashScreen.js)- Using Lottie animation
 
-- Header component is reusable by using headColor and children property.
+-Header (App.js) - Title is moving up and down 5 times. When app is scrolled down, header height and background color change.
 
-- Card component is reusable by using name, image, and category properties.
-
+-Card (App.js) - When cards are clicked, they flip over.
